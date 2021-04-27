@@ -1,0 +1,37 @@
+.gridArea {
+    display: -webkit-flex;    
+    display: -ms-flexbox;   
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr;  grid-template-rows: auto;
+    grid-template-areas:  "imgArea listArea";
+    gap: 10px; */
+    }
+    .common {
+        background-color: rgb(252, 250, 248); 
+        border: thick solid rgb(9, 9, 12); 
+        padding: 10px; 
+        margin: 10px; 
+        flex: 1 ;
+    }
+    .imgArea {
+        grid-area: imgArea; 
+        text-align: center; 
+    }
+    .listArea {
+        grid-area: listArea;
+    }
+
+    
+@media only screen and (max-width: 501px) {
+    .gridArea {
+        flex-direction: column;
+        flex: 1 1 100%;
+        align-items: stretch;
+        margin: 0 10px;
+        }
+}

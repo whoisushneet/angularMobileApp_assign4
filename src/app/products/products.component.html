@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Inventory Count</th>
+    </tr>
+
+    <tr *ngFor = "let p of products">
+        <td>{{p.ProductID}}</td>
+        <td>{{p.Name}}</td>
+        <td [ngStyle]="{textAlign: 'right'}">{{p.Price | currency}}</td>
+        <td [ngStyle]="{textAlign: 'right'}">{{p.InventoryCount}}</td>
+    </tr>
+</table>

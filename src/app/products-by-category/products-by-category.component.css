@@ -1,0 +1,34 @@
+*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.buttonCSS {
+    margin: 10px 2px 0 2px;
+}
+.mainArea{
+    margin: 10px 4px;
+}
+.btnArea {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.common {background-color: rgb(252, 250, 248); text-align: center;}
+
+.gridArea {
+    /* display: grid;
+    grid-template-columns: 1fr 3fr;  grid-template-rows: auto;
+    grid-template-areas:  "imgArea listArea";
+    gap: 10px; */
+    display: flex;
+    flex: 1 0 50%;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    }
+   
+    .imgArea {grid-area: imgArea; text-align: center;}
+    .listArea {grid-area: listArea;}
